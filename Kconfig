@@ -12,6 +12,17 @@ menu "LVGL configuration"
     config LV_CONF_MINIMAL
         bool "LVGL minimal configuration."
 
+    menu "Size settings"
+        config LV_HOR_RES_MAX
+            int "HOR"
+            default 240
+
+        config LV_VER_RES_MAX
+            int "VER"
+            default 320
+
+    endmenu
+
     menu "Color settings"
         choice LV_COLOR_DEPTH
             prompt "Color depth."
